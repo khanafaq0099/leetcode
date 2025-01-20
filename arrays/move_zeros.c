@@ -21,12 +21,14 @@ void moveZeroes(int* nums, int numsSize){
     
     for(int j =0; j< numsSize; j++)
         printf("%d ", cpy[j]);
-    
+    printf("\n");
+
+    free(cpy); 
 }
 
 int main()
 {
-    int nums[1] = {0};
-    moveZeroes(nums,  1);
+    int nums[8] = {1,2,3,0,9,0,1,2};
+    moveZeroes(nums,  8);
     return 0;
 }
